@@ -29,8 +29,8 @@ main{
 }
 
 main > div{
-    width: 22.5vh;
-    height: 22.5vh;
+    width: calc(22.5vh / 4);
+    height: calc(22.5vh / 4);
     position: absolute;
 }
 
@@ -38,24 +38,97 @@ main > div{
     left: 0;
 }
 .x1{
-    left: 25%;
+    left: calc((100% / 16) * 1);
 }
 .x2{
-    left: 50%;
+    left: calc((100% / 16) * 2);
 }
 .x3{
-    left: 75%;
+    left: calc((100% / 16) * 3);
 }
+.x4{
+    left: calc((100% / 16) * 4);
+}
+.x5{
+    left: calc((100% / 16) * 5);
+}
+.x6{
+    left: calc((100% / 16) * 6);
+}
+.x7{
+    left: calc((100% / 16) * 7);
+}
+.x8{
+    left: calc((100% / 16) * 8);
+}
+.x9{
+    left: calc((100% / 16) * 9);
+}
+.x10{
+    left: calc((100% / 16) * 10);
+}
+.x11{
+    left: calc((100% / 16) * 11);
+}
+.x12{
+    left: calc((100% / 16) * 12);
+}
+.x13{
+    left: calc((100% / 16) * 13);
+}
+.x14{
+    left: calc((100% / 16) * 14);
+}
+.x15{
+    left: calc((100% / 16) * 15);
+}
+
 
 .y0{
     top: 0;
 }
 .y1{
-    top: 25%;
+    top: calc((100% / 16) * 1);
 }
 .y2{
-    top: 50%;
+    top: calc((100% / 16) * 2);
 }
 .y3{
-    top: 75%;
+    top: calc((100% / 16) * 3);
+}
+.y4{
+    top: calc((100% / 16) * 4);
+}
+.y5{
+    top: calc((100% / 16) * 5);
+}
+.y6{
+    top: calc((100% / 16) * 6);
+}
+.y7{
+    top: calc((100% / 16) * 7);
+}
+.y8{
+    top: calc((100% / 16) * 8);
+}
+.y9{
+    top: calc((100% / 16) * 9);
+}
+.y10{
+    top: calc((100% / 16) * 10);
+}
+.y11{
+    top: calc((100% / 16) * 11);
+}
+.y12{
+    top: calc((100% / 16) * 12);
+}
+.y13{
+    top: calc((100% / 16) * 13);
+}
+.y14{
+    top: calc((100% / 16) * 14);
+}
+.y15{
+    top: calc((100% / 16) * 15);
 }

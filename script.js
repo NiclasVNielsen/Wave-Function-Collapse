@@ -1,4 +1,4 @@
-const gridDim = 4; // Ratio = 1
+const gridDim = 16; // Ratio = 1
 
 const tiles = [
     {name: "0000",top: "0",right: "0",bottom: "0",left: "0"},
@@ -51,7 +51,11 @@ const calcOrder = () => {
 
     if(order.length > 0){
         const pos = GridPosToXY(order[0].index)
-        collapse(pos.x, pos.y)
+        setTimeout(() => {
+            collapse(pos.x, pos.y)
+        }, 100);
+    }else{
+        // printGrid() renders as a chunk
     }
 }
 
@@ -67,7 +71,7 @@ const createTile = (tile, x, y) => {
     main.appendChild(div)
 }
 
-const printGrid = () => {
+/* const printGrid = () => { Renders as a chunk
     let pos
     grid.forEach((tile, index) => {
         pos = GridPosToXY(index)
@@ -75,7 +79,7 @@ const printGrid = () => {
             createTile(tile.tiles[0].name, pos.x, pos.y)
         }
     })
-}
+} */
 
 
 const randomNumber = (max, min = 0) => {
@@ -94,6 +98,9 @@ const collapse = (x, y) => {
     if(availableTiles > 1){
         //Pick a random tile of the remaining
         grid[gridPos].tiles = [grid[gridPos].tiles[randomNumber(availableTiles - 1)]]
+
+        createTile(grid[gridPos].tiles[0].name, x, y) /* Remove me if you don't want the animation */
+
         updateNeighbours(x, y, grid[gridPos].tiles)
     }else if(availableTiles == 1){
         console.error("Already Collapsed")
@@ -149,6 +156,6 @@ const updateNeighbours = (x, y, polarities) => {
 const waveFunctionCollapse = () => {
     createGrid()
     collapse(randomNumber(3), randomNumber(3))
-    printGrid()
+    /* printGrid() */
 }
 waveFunctionCollapse()
