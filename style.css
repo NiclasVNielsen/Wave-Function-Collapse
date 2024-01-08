@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    height: 90vh;
+    width: 90vh;
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+main > div{
+    width: 22.5vh;
+    height: 22.5vh;
+    position: absolute;
+}
+
+.x0{
+    left: 0;
+}
+.x1{
+    left: 25%;
+}
+.x2{
+    left: 50%;
+}
+.x3{
+    left: 75%;
+}
+
+.y0{
+    top: 0;
+}
+.y1{
+    top: 25%;
+}
+.y2{
+    top: 50%;
+}
+.y3{
+    top: 75%;
+}
