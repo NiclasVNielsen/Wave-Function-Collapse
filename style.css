@@ -17,12 +17,13 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background: #333;
 }
 
 main{
     height: 90vh;
     width: 90vh;
-    background: #eee;
+    background: #555;
     display: flex;
     flex-wrap: wrap;
     position: relative;
